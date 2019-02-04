@@ -1,0 +1,536 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "backdrop_path": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "credit_id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "profile_path": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "credit_id",
+            "name",
+            "profile_path"
+          ]
+        }
+      ]
+    },
+    "episode_run_time": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "first_air_date": {
+      "type": "string"
+    },
+    "genres": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ]
+        }
+      ]
+    },
+    "homepage": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "in_production": {
+      "type": "boolean"
+    },
+    "languages": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "last_air_date": {
+      "type": "string"
+    },
+    "last_episode_to_air": {
+      "type": "object",
+      "properties": {
+        "air_date": {
+          "type": "string"
+        },
+        "episode_number": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "overview": {
+          "type": "string"
+        },
+        "production_code": {
+          "type": "null"
+        },
+        "season_number": {
+          "type": "integer"
+        },
+        "show_id": {
+          "type": "integer"
+        },
+        "still_path": {
+          "type": "string"
+        },
+        "vote_average": {
+          "type": "number"
+        },
+        "vote_count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "air_date",
+        "episode_number",
+        "id",
+        "name",
+        "overview",
+        "production_code",
+        "season_number",
+        "show_id",
+        "still_path",
+        "vote_average",
+        "vote_count"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "next_episode_to_air": {
+      "type": "null"
+    },
+    "networks": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "logo_path": {
+              "type": "string"
+            },
+            "origin_country": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "id",
+            "logo_path",
+            "origin_country"
+          ]
+        }
+      ]
+    },
+    "number_of_episodes": {
+      "type": "integer"
+    },
+    "number_of_seasons": {
+      "type": "integer"
+    },
+    "origin_country": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "original_language": {
+      "type": "string"
+    },
+    "original_name": {
+      "type": "string"
+    },
+    "overview": {
+      "type": "string"
+    },
+    "popularity": {
+      "type": "number"
+    },
+    "poster_path": {
+      "type": "string"
+    },
+    "production_companies": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "logo_path": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "origin_country": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "logo_path",
+            "name",
+            "origin_country"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "logo_path": {
+              "type": "null"
+            },
+            "name": {
+              "type": "string"
+            },
+            "origin_country": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "logo_path",
+            "name",
+            "origin_country"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "logo_path": {
+              "type": "null"
+            },
+            "name": {
+              "type": "string"
+            },
+            "origin_country": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "logo_path",
+            "name",
+            "origin_country"
+          ]
+        }
+      ]
+    },
+    "seasons": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "air_date": {
+              "type": "string"
+            },
+            "episode_count": {
+              "type": "integer"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "overview": {
+              "type": "string"
+            },
+            "poster_path": {
+              "type": "string"
+            },
+            "season_number": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "air_date",
+            "episode_count",
+            "id",
+            "name",
+            "overview",
+            "poster_path",
+            "season_number"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "air_date": {
+              "type": "string"
+            },
+            "episode_count": {
+              "type": "integer"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "overview": {
+              "type": "string"
+            },
+            "poster_path": {
+              "type": "string"
+            },
+            "season_number": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "air_date",
+            "episode_count",
+            "id",
+            "name",
+            "overview",
+            "poster_path",
+            "season_number"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "air_date": {
+              "type": "string"
+            },
+            "episode_count": {
+              "type": "integer"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "overview": {
+              "type": "string"
+            },
+            "poster_path": {
+              "type": "string"
+            },
+            "season_number": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "air_date",
+            "episode_count",
+            "id",
+            "name",
+            "overview",
+            "poster_path",
+            "season_number"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "air_date": {
+              "type": "string"
+            },
+            "episode_count": {
+              "type": "integer"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "overview": {
+              "type": "string"
+            },
+            "poster_path": {
+              "type": "string"
+            },
+            "season_number": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "air_date",
+            "episode_count",
+            "id",
+            "name",
+            "overview",
+            "poster_path",
+            "season_number"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "air_date": {
+              "type": "string"
+            },
+            "episode_count": {
+              "type": "integer"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "overview": {
+              "type": "string"
+            },
+            "poster_path": {
+              "type": "string"
+            },
+            "season_number": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "air_date",
+            "episode_count",
+            "id",
+            "name",
+            "overview",
+            "poster_path",
+            "season_number"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "air_date": {
+              "type": "string"
+            },
+            "episode_count": {
+              "type": "integer"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "overview": {
+              "type": "string"
+            },
+            "poster_path": {
+              "type": "string"
+            },
+            "season_number": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "air_date",
+            "episode_count",
+            "id",
+            "name",
+            "overview",
+            "poster_path",
+            "season_number"
+          ]
+        }
+      ]
+    },
+    "status": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "vote_average": {
+      "type": "number"
+    },
+    "vote_count": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "backdrop_path",
+    "created_by",
+    "episode_run_time",
+    "first_air_date",
+    "genres",
+    "homepage",
+    "id",
+    "in_production",
+    "languages",
+    "last_air_date",
+    "last_episode_to_air",
+    "name",
+    "next_episode_to_air",
+    "networks",
+    "number_of_episodes",
+    "number_of_seasons",
+    "origin_country",
+    "original_language",
+    "original_name",
+    "overview",
+    "popularity",
+    "poster_path",
+    "production_companies",
+    "seasons",
+    "status",
+    "type",
+    "vote_average",
+    "vote_count"
+  ]
+}
